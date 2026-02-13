@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>R - Asian Head Spa</title>
+  <meta name="description" content="アジアンリゾートの静けさ。ドライヘッドスパ専門店 R">
+  <link rel="icon" href="./img/favicon.png?v=4" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ★ #top をページ先頭に置く（戻りが確実） -->
+  <div id="top"></div>
+
+  <header class="header">
+    <div class="header__inner">
+      <!-- ★ ロゴ：画像でもテキストでもOK -->
+      <a class="logo" href="#top" aria-label="R トップへ">
+        <!-- 画像ロゴを使うなら下を有効化して、ファイル名を合わせてね -->
+        <img src="img/logo-r-horizontal.png" alt="R Asian Head Spa">
+
+      </a>
+
+      <!-- ★ aria-controls を追加して nav と紐付け -->
+      <button class="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- ★ navにid付与 -->
+      <nav class="nav" id="globalNav" aria-label="グローバルナビゲーション">
+        <!-- <a href="#menu">Menu</a>
+        <a href="#features">Concept</a>
+        <a href="#voice">Voice</a>
+        <a href="#info">Info</a>
+        <a class="nav__cta" href="#contact">Reserve</a> -->
+
+        <a href="#menu" class="arcLink">
+          <span class="arcLink__label">Menu</span>
+          <svg class="arcLink__arc" viewBox="0 0 200 120" aria-hidden="true">
+            <defs>
+              <path id="arcPathMenu" d="M 20 100 A 80 80 0 0 1 180 100" />
+            </defs>
+            <text>
+              <textPath href="#arcPathMenu" startOffset="50%" text-anchor="middle">
+                Menu
+              </textPath>
+            </text>
+          </svg>
+        </a>
+
+        <a href="#features" class="arcLink">
+          <span class="arcLink__label">Concept</span>
+          <svg class="arcLink__arc" viewBox="0 0 200 120" aria-hidden="true">
+            <defs>
+              <path id="arcPathMenu" d="M 20 100 A 80 80 0 0 1 180 100" />
+            </defs>
+            <text>
+              <textPath href="#arcPathMenu" startOffset="50%" text-anchor="middle">
+                Concept
+              </textPath>
+            </text>
+          </svg>
+        </a>
+
+        <a href="#voice" class="arcLink">
+          <span class="arcLink__label">Voice</span>
+          <svg class="arcLink__arc" viewBox="0 0 200 120" aria-hidden="true">
+            <defs>
+              <path id="arcPathMenu" d="M 20 100 A 80 80 0 0 1 180 100" />
+            </defs>
+            <text>
+              <textPath href="#arcPathMenu" startOffset="50%" text-anchor="middle">
+                Voice
+              </textPath>
+            </text>
+          </svg>
+        </a>
+
+        <a href="#info" class="arcLink">
+          <span class="arcLink__label">Info</span>
+          <svg class="arcLink__arc" viewBox="0 0 200 120" aria-hidden="true">
+            <defs>
+              <path id="arcPathMenu" d="M 20 100 A 80 80 0 0 1 180 100" />
+            </defs>
+            <text>
+              <textPath href="#arcPathMenu" startOffset="50%" text-anchor="middle">
+                Info
+              </textPath>
+            </text>
+          </svg>
+        </a>
+
+        <a href="#contact" class="arcLink">
+          <span class="arcLink__label">Reserve</span>
+          <svg class="arcLink__arc" viewBox="0 0 200 120" aria-hidden="true">
+            <defs>
+              <path id="arcPathMenu" d="M 20 100 A 80 80 0 0 1 180 100" />
+            </defs>
+            <text>
+              <textPath href="#arcPathMenu" startOffset="50%" text-anchor="middle">
+                Reserve
+              </textPath>
+            </text>
+          </svg>
+        </a>
+
+
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__inner">
+        <p class="badge">Asian Head Spa</p>
+        <h1 class="hero__title">
+          香りと静けさでほどける、<br>アジアンドライヘッドスパ
+        </h1>
+        <p class="hero__lead">
+          柔らかな灯り、深い呼吸、選べるアロマ。<br>
+          今日のあなたに合わせて、頭皮から整えます。
+        </p>
+        <div class="hero__btns">
+          <a class="btn btn--primary" href="#contact">予約・お問い合わせ</a>
+          <a class="btn btn--ghost" href="#menu">メニューを見る</a>
+        </div>
+
+        <!-- <div class="hero__card reveal">
+          <div class="hero__cardRow">
+            <div class="hero__cardItem">
+              <span class="kpi">Aroma</span>
+              <span class="kpiLabel">香りで整える</span>
+            </div>
+            <div class="hero__cardItem">
+              <span class="kpi">Warm</span>
+              <span class="kpiLabel">ホットタオル</span>
+            </div>
+            <div class="hero__cardItem">
+              <span class="kpi">Private</span>
+              <span class="kpiLabel">静かな空間</span>
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section">
+      <div class="container">
+        <h2 class="section__title">Menu</h2>
+        <p class="section__sub">アジアンな“ゆるみ”を感じる、3つの基本コース。</p>
+
+        <div class="grid cards">
+          <article class="card reveal">
+            <h3 class="card__title">R</h3>
+            <p class="card__desc">アロマ×ゆったり圧で、思考を静かに。</p>
+            <ul class="list">
+              <li>60分</li>
+              <li>ホットアイマスク＋ヘッドマッサージ</li>
+              <li>テイクアウトドリンク付き</li>
+            </ul>
+            <div class="price">¥6,600 <span class="tax">税込</span></div>
+          </article>
+
+          <article class="card reveal">
+            <h3 class="card__title">R Standard</h3>
+            <p class="card__desc">アロマ×デコルテ～ヘッドにかけてゆっくりとした時間</p>
+            <ul class="list">
+              <li>90分</li>
+              <li>デコルテ→ホットストーン→ヘッドマッサージ</li>
+              <li>施術中にホットアイマスク付き</li>
+              <li>テイクアウトドリンク付き</li>
+            </ul>
+            <div class="price">¥9,900 <span class="tax">税込</span></div>
+          </article>
+
+          <article class="card reveal">
+            <h3 class="card__title">R Luxury</h3>
+            <p class="card__desc">灯りを落として、深く休むためのご褒美。</p>
+            <ul class="list">
+              <li>120分</li>
+              <li>リフレクソロジーorフェイシャルマッサージデコルテ→ホットストーン→ヘッドマッサージ</li>
+              <li>施術中にホットアイマスク付き</li>
+              <li>テイクアウトドリンク付き</li>
+            </ul>
+            <div class="price">¥13,200 <span class="tax">税込</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section section--soft">
+      <div class="container">
+        <h2 class="section__title">Concept</h2>
+        <p class="section__sub">“アジアンリゾートの静けさ”を、街中で。</p>
+
+        <div class="grid features">
+          <div class="feature reveal">
+            <h3>香りを選ぶ</h3>
+            <p>気分に合わせてアロマを選択。施術前の呼吸から整えます。</p>
+          </div>
+          <div class="feature reveal">
+            <h3>温めてゆるめる</h3>
+            <p>ホットストーン＆ホットアイマスクで、ふっと力が抜ける体感に。</p>
+          </div>
+          <div class="feature reveal">
+            <h3>静かなプライベート</h3>
+            <p>会話少なめもOK。落ち着いた導線と照明を想定しています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOICE -->
+    <section id="voice" class="section">
+      <div class="container">
+        <h2 class="section__title">Voice</h2>
+        <div class="grid voices">
+          <div class="voice reveal">
+            <p class="voice__text">「香りが良くて、入った瞬間から落ち着きました。」</p>
+            <p class="voice__meta">30代 / 会社員</p>
+          </div>
+          <div class="voice reveal">
+            <p class="voice__text">「終わった後、目が開いて視界が明るい感じ。」</p>
+            <p class="voice__meta">40代 / 自営業</p>
+          </div>
+          <div class="voice reveal">
+            <p class="voice__text">「寝落ち…！静かで、安心して委ねられました。」</p>
+            <p class="voice__meta">20代 / 学生</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO -->
+    <section id="info" class="section section--soft">
+      <div class="container">
+        <h2 class="section__title">Info</h2>
+
+        <div class="infoBox reveal">
+          <dl class="infoDl">
+            <div>
+              <dt>営業時間</dt>
+              <dd>10:00〜20:00（最終受付 18:30）</dd>
+            </div>
+            <div>
+              <dt>定休日</dt>
+              <dd>不定休</dd>
+            </div>
+            <div>
+              <dt>アクセス</dt>
+              <dd>〇〇駅 徒歩5分（ポートフォリオ用ダミー）</dd>
+            </div>
+            <div>
+              <dt>雰囲気</dt>
+              <dd>アジアンリゾート / 静けさ / 柔らかな灯り</dd>
+            </div>
+          </dl>
+
+          <a class="btn btn--ghost" href="#" id="mapBtn">地図を見る（ダミー）</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section__title">Reserve</h2>
+        <p class="section__sub">実送信なしのデモ（送信完了だけ表示）</p>
+
+        <form class="form reveal" id="contactForm">
+          <div class="form__row">
+            <label>お名前
+              <input type="text" name="name" required placeholder="例：上原 真実">
+            </label>
+            <label>メール
+              <input type="email" name="email" required placeholder="example@email.com">
+            </label>
+          </div>
+
+          <label>ご希望コース
+            <select name="course">
+              <option>R Calm（60分）</option>
+              <option>R Balance（90分）</option>
+              <option>R Retreat（120分）</option>
+              <option>相談したい</option>
+            </select>
+          </label>
+
+          <label>メッセージ
+            <textarea name="message" rows="5" placeholder="例：土日の空き状況を知りたいです。"></textarea>
+          </label>
+
+          <button class="btn btn--primary" type="submit">送信する</button>
+
+          <p class="form__done" id="formDone" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer-logo">
+        <a href="index.html" class="footer-logo"><img src="img/footer.png" alt="R Asian Head Spa"></a>
+      </div>
+
+      <p class="footer__copy">© 2026 Portfolio Sample</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+
+</html>
